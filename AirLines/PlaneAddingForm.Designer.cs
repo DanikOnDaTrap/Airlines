@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlaneAddingForm));
             this.label3 = new System.Windows.Forms.Label();
             this.textBoxLife = new System.Windows.Forms.TextBox();
             this.textBoxModel = new System.Windows.Forms.TextBox();
@@ -143,11 +144,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(55, 107);
+            this.label2.Location = new System.Drawing.Point(102, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(621, 37);
+            this.label2.Size = new System.Drawing.Size(534, 37);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Добавление записи в таблицу Commander";
+            this.label2.Text = "Добавление записи в таблицу Plane:";
             // 
             // panel1
             // 
@@ -217,9 +218,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PlaneAddingForm";
-            this.Text = "PlaneAddingForm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PlaneAddingForm_FormClosing);
+            this.Text = "POLET";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

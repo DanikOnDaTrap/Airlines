@@ -15,7 +15,6 @@ namespace AirLines
     public partial class FlightAddingForm : Form
     {
         AIRLINESdbEntities db = new AIRLINESdbEntities();
-        bool saved = false;
 
         public FlightAddingForm(SqlConnection connection)
         {
@@ -66,13 +65,6 @@ namespace AirLines
         private void buttonSave_Click(object sender, EventArgs e)
         {
             Add();
-            saved = true;
-        }
-
-        private void FlightAddingForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (saved == false)
-                Add();
         }
     }   
 }

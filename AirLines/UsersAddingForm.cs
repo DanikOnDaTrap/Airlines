@@ -21,7 +21,7 @@ namespace AirLines
 
         private void Add()
         {
-            if (textBoxPass.Text != null && textBoxName.Text != null && textBoxLogin.Text !=null)
+            if (textBoxPass.Text != "" && textBoxName.Text != "" && textBoxLogin.Text != "")
             {
                 try
                 {
@@ -63,11 +63,6 @@ namespace AirLines
             textBoxName.Text = "";
             textBoxLogin.Text = "";
             textBoxPass.Text = "";
-        }
-
-        private void UsersAddingForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Add();
         }
     }
 }

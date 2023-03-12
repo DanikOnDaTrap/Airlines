@@ -13,7 +13,6 @@ namespace AirLines
     public partial class PlaneAddingForm : Form
     {
         AIRLINESdbEntities db = new AIRLINESdbEntities();
-        bool saved = false;
 
         public PlaneAddingForm()
         {
@@ -24,7 +23,7 @@ namespace AirLines
         }
         private void Add()
         {
-            if (textBoxModel != null && textBoxLife != null)
+            if (textBoxModel.Text != "" && textBoxLife.Text != "")
             {
                 bool red;
                 if (checkBox1.Checked)
@@ -59,13 +58,6 @@ namespace AirLines
         private void buttonSave_Click(object sender, EventArgs e)
         {
             Add();
-            saved = true;
-        }
-
-        private void PlaneAddingForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (saved == false)
-                Add();
         }
     }
 }

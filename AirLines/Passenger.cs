@@ -27,6 +27,13 @@ namespace AirLines
         public string Patronymic { get; set; }
         public string Adress { get; set; }
         public string PhoneNumber { get; set; }
+        public string PassengerDetail
+        {
+            get
+            {
+                return $"{this.ID}:{this.Surname} {this.Name} {this.Patronymic}";
+            }
+        }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Ticket> Ticket { get; set; }

@@ -1,35 +1,37 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace AirLines
 {
-    public partial class CommanderAddingForm : Form
+    public partial class RoleAddingForm : Form
     {
         AIRLINESdbEntities db = new AIRLINESdbEntities();
 
-        public CommanderAddingForm()
+        public RoleAddingForm()
         {
             InitializeComponent();
         }
         private void Add()
         {
-            if (textBoxSurname.Text != "" && textBoxName.Text != "" && textBoxAdress.Text != "" && textBoxPhone.Text != "" && textBoxFH.Text != "")
+            if (textBoxName.Text != "" && textBoxDescription.Text != "")
             {
                 try
                 {
-                    Commander obj = new Commander()
+                    Role obj = new Role()
                     {
-                        ID = AIRLINESdbEntities.GetContext().Commander.ToList().Count,
+                        ID = AIRLINESdbEntities.GetContext().Role.ToList().Count,
                         Name = textBoxName.Text,
-                        Surname = textBoxSurname.Text,
-                        Patronymic = textBoxPatr.Text,
-                        Adress = textBoxAdress.Text,
-                        PhoneNumber = textBoxPhone.Text,
-                        FlyingHours = Convert.ToInt32(textBoxFH.Text)
+                        Description = textBoxDescription.Text
                     };
-                    db.Commander.Add(obj);
+                    db.Role.Add(obj);
                     db.SaveChanges();
                 }
                 catch

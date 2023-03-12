@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PassengerAddingForm));
             this.labelAuth = new System.Windows.Forms.Label();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -66,7 +67,6 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(342, 38);
             this.textBoxPhone.TabIndex = 39;
-            this.textBoxPhone.TextChanged += new System.EventHandler(this.textBoxPhone_TextChanged);
             // 
             // textBoxName
             // 
@@ -75,7 +75,6 @@
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(342, 38);
             this.textBoxName.TabIndex = 38;
-            this.textBoxName.TextChanged += new System.EventHandler(this.textBoxName_TextChanged);
             // 
             // label3
             // 
@@ -87,7 +86,6 @@
             this.label3.Size = new System.Drawing.Size(136, 31);
             this.label3.TabIndex = 37;
             this.label3.Text = "Телефон:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // textBoxAdress
             // 
@@ -96,7 +94,6 @@
             this.textBoxAdress.Name = "textBoxAdress";
             this.textBoxAdress.Size = new System.Drawing.Size(342, 38);
             this.textBoxAdress.TabIndex = 36;
-            this.textBoxAdress.TextChanged += new System.EventHandler(this.textBoxAdress_TextChanged);
             // 
             // textBoxPatr
             // 
@@ -105,7 +102,6 @@
             this.textBoxPatr.Name = "textBoxPatr";
             this.textBoxPatr.Size = new System.Drawing.Size(342, 38);
             this.textBoxPatr.TabIndex = 35;
-            this.textBoxPatr.TextChanged += new System.EventHandler(this.textBoxPatr_TextChanged);
             // 
             // textBoxSurname
             // 
@@ -114,7 +110,6 @@
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(342, 38);
             this.textBoxSurname.TabIndex = 34;
-            this.textBoxSurname.TextChanged += new System.EventHandler(this.textBoxSurname_TextChanged);
             // 
             // panel2
             // 
@@ -146,7 +141,6 @@
             this.label9.Size = new System.Drawing.Size(100, 31);
             this.label9.TabIndex = 33;
             this.label9.Text = "Адрес:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label7
             // 
@@ -158,7 +152,6 @@
             this.label7.Size = new System.Drawing.Size(139, 31);
             this.label7.TabIndex = 32;
             this.label7.Text = "Отчество:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label8
             // 
@@ -170,7 +163,6 @@
             this.label8.Size = new System.Drawing.Size(76, 31);
             this.label8.TabIndex = 31;
             this.label8.Text = "Имя:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label1
             // 
@@ -182,7 +174,6 @@
             this.label1.Size = new System.Drawing.Size(139, 31);
             this.label1.TabIndex = 30;
             this.label1.Text = "Фамилия:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -194,7 +185,6 @@
             this.label2.Size = new System.Drawing.Size(596, 37);
             this.label2.TabIndex = 28;
             this.label2.Text = "Добавление записи в таблицу Passenger";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel1
             // 
@@ -204,7 +194,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(773, 72);
             this.panel1.TabIndex = 40;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label4
             // 
@@ -237,9 +226,11 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PassengerAddingForm";
-            this.Text = "PassengerAddingForm";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PassengerAddingForm_FormClosing);
+            this.Text = "POLET";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

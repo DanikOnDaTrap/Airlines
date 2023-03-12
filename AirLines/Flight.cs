@@ -39,7 +39,14 @@ namespace AirLines
                 return $"{Plane1.Model}-{Plane1.ID}";
             }
         }
-        
+        public string FlightDetail
+        {
+            get
+            {
+                return $"{this.ID}:{Route1.DepartureAirport}-{Route1.DestinationAirport}";
+            }
+        }
+
         public bool Canceled { get; set; }
     
         public virtual Plane Plane1 { get; set; }

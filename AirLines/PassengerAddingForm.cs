@@ -20,7 +20,7 @@ namespace AirLines
         }
         private void Add()
         {
-            if (textBoxSurname.Text != null && textBoxName.Text != null && textBoxAdress.Text != null && textBoxPhone.Text != null)
+            if (textBoxSurname.Text != "" && textBoxName.Text != "" && textBoxAdress.Text != "" && textBoxPhone.Text != "")
             {
                 try
                 {
@@ -46,71 +46,6 @@ namespace AirLines
         private void buttonSave_Click(object sender, EventArgs e)
         {
             Add();
-        }
-
-        private void PassengerAddingForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Add();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxPhone_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxAdress_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxPatr_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxSurname_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

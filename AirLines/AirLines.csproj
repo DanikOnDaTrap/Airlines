@@ -94,6 +94,24 @@
     <Compile Include="PlaneAddingForm.Designer.cs">
       <DependentUpon>PlaneAddingForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoleAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoleAddingForm.Designer.cs">
+      <DependentUpon>RoleAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RouteAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteAddingForm.Designer.cs">
+      <DependentUpon>RouteAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketAddingForm.Designer.cs">
+      <DependentUpon>TicketAddingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersAddingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -185,6 +203,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlaneAddingForm.resx">
       <DependentUpon>PlaneAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleAddingForm.resx">
+      <DependentUpon>RoleAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouteAddingForm.resx">
+      <DependentUpon>RouteAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketAddingForm.resx">
+      <DependentUpon>TicketAddingForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsersAddingForm.resx">
       <DependentUpon>UsersAddingForm.cs</DependentUpon>

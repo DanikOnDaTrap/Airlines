@@ -245,10 +245,16 @@ namespace AirLines
                     objPl.ShowDialog();
                     break;
                 case 4:
+                    RoleAddingForm objRl = new RoleAddingForm();
+                    objRl.ShowDialog();
                     break;
                 case 5:
+                    RouteAddingForm objRt = new RouteAddingForm();
+                    objRt.ShowDialog();
                     break;
                 case 6:
+                    TicketAddingForm objT = new TicketAddingForm();
+                    objT.ShowDialog();
                     break;
                 case 7:
                     UsersAddingForm obj = new UsersAddingForm(cn);
