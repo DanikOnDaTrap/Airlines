@@ -70,6 +70,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommanderAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommanderAddingForm.Designer.cs">
+      <DependentUpon>CommanderAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightAddingForm.Designer.cs">
+      <DependentUpon>FlightAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassengerAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerAddingForm.Designer.cs">
+      <DependentUpon>PassengerAddingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlaneAddingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlaneAddingForm.Designer.cs">
+      <DependentUpon>PlaneAddingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsersAddingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +174,18 @@
     <Compile Include="Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CommanderAddingForm.resx">
+      <DependentUpon>CommanderAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightAddingForm.resx">
+      <DependentUpon>FlightAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerAddingForm.resx">
+      <DependentUpon>PassengerAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlaneAddingForm.resx">
+      <DependentUpon>PlaneAddingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsersAddingForm.resx">
       <DependentUpon>UsersAddingForm.cs</DependentUpon>
     </EmbeddedResource>

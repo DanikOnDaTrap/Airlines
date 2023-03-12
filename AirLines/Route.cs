@@ -27,6 +27,14 @@ namespace AirLines
         public string DestinationAirport { get; set; }
         public decimal TicketPrice { get; set; }
         public int Duration { get; set; }
+        
+        public string RouteDetail
+        {
+            get
+            {
+                return $"{this.ID}:{this.DepartureAirport}-{this.DestinationAirport}";
+            }
+        }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Flight> Flight { get; set; }

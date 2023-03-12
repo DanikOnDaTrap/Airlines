@@ -29,6 +29,13 @@ namespace AirLines
         public string Adress { get; set; }
         public string PhoneNumber { get; set; }
         public int FlyingHours { get; set; }
+        public string CommanderDetail
+        {
+            get
+            {
+                return $"{this.ID}:{this.Surname} {this.Name} {this.Patronymic}";
+            }
+        }
 
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

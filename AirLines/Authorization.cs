@@ -19,8 +19,7 @@ namespace AirLines
             InitializeComponent();
             textBoxPassword.UseSystemPasswordChar = true;
             ////////
-            UsersAddingForm obj = new UsersAddingForm();
-            obj.ShowDialog();
+            
             //////////
         }
         

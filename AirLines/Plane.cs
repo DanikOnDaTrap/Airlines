@@ -11,7 +11,8 @@ namespace AirLines
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Windows.Forms;
+
     public partial class Plane
     {
         public String[] str = { "ID", "Model", "Date", "LifeTime", "Ready", "CommanderDetail" };
@@ -32,6 +33,13 @@ namespace AirLines
             get
             {
                 return $"{Commander1.Surname} {Commander1.Name} {Commander1.Patronymic}";
+            }
+        }
+        public string PlaneDetail
+        {
+            get
+            {
+                return $"{this.ID}:{this.Model}";
             }
         }
     

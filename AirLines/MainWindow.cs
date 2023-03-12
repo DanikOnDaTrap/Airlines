@@ -229,12 +229,20 @@ namespace AirLines
             switch (comboBoxAdd.SelectedIndex)
             {
                 case 0:
+                    CommanderAddingForm objC = new CommanderAddingForm();
+                    objC.ShowDialog();
                     break;
                 case 1:
+                    FlightAddingForm objF = new FlightAddingForm(cn);
+                    objF.ShowDialog();
                     break;
                 case 2:
+                    PassengerAddingForm objP = new PassengerAddingForm();
+                    objP.ShowDialog();
                     break;
                 case 3:
+                    PlaneAddingForm objPl = new PlaneAddingForm();
+                    objPl.ShowDialog();
                     break;
                 case 4:
                     break;
@@ -243,6 +251,8 @@ namespace AirLines
                 case 6:
                     break;
                 case 7:
+                    UsersAddingForm obj = new UsersAddingForm(cn);
+                    obj.ShowDialog();
                     break;
             }
         }
