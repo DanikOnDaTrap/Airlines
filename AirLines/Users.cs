@@ -14,10 +14,17 @@ namespace AirLines
     
     public partial class Users
     {
-        public String[] str = { "ID", "Name", "Role", "Login", "Password" };
+        public String[] str = { "ID", "Name", "RoleDetail", "Login", "Password" };
         public int ID { get; set; }
         public string Name { get; set; }
         public int Role { get; set; }
+        public string RoleDetail 
+        {
+            get
+            {
+                return $"{Role1.Name}";
+            }
+        }
         public string Login { get; set; }
         public string Password { get; set; }
     

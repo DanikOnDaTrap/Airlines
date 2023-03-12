@@ -122,6 +122,7 @@ namespace AirLines
                 dataGridView1.Columns[i].DataPropertyName = obj.str[i];
                 dataGridView1.Columns[i].HeaderText = obj.str[i];
             }
+            dataGridView1.Columns[2].Width = 300;
             dataGridView1.DataSource = AIRLINESdbEntities.GetContext().Flight.ToList();
         }
         private void BuildPassengerTable()
@@ -148,6 +149,7 @@ namespace AirLines
                 dataGridView1.Columns[i].DataPropertyName = obj.str[i];
                 dataGridView1.Columns[i].HeaderText = obj.str[i];
             }
+            dataGridView1.Columns[5].Width = 300;
             dataGridView1.DataSource = AIRLINESdbEntities.GetContext().Plane.ToList();
         }
         private void BuildRoleTable()
@@ -187,6 +189,8 @@ namespace AirLines
                 dataGridView1.Columns[i].DataPropertyName = obj.str[i];
                 dataGridView1.Columns[i].HeaderText = obj.str[i];
             }
+            dataGridView1.Columns[1].Width = 300;
+            dataGridView1.Columns[2].Width = 300;
             dataGridView1.DataSource = AIRLINESdbEntities.GetContext().Ticket.ToList();
         }
         private void BuildUsersTable()
@@ -218,6 +222,29 @@ namespace AirLines
         {
             ArrivalsForm obj = new ArrivalsForm(AirLinesCounter.Arrivals(cn));
             obj.Show();
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            switch (comboBoxAdd.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+            }
         }
     }
 }

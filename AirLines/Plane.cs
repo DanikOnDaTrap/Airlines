@@ -14,7 +14,7 @@ namespace AirLines
     
     public partial class Plane
     {
-        public String[] str = { "ID", "Model", "Date", "LifeTime", "Ready", "Commander" };
+        public String[] str = { "ID", "Model", "Date", "LifeTime", "Ready", "CommanderDetail" };
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Plane()
         {
@@ -27,6 +27,13 @@ namespace AirLines
         public int Lifetime { get; set; }
         public bool Ready { get; set; }
         public int Commander { get; set; }
+        public string CommanderDetail
+        {
+            get
+            {
+                return $"{Commander1.Surname} {Commander1.Name} {Commander1.Patronymic}";
+            }
+        }
     
         public virtual Commander Commander1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

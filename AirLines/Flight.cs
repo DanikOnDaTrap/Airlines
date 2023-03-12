@@ -14,7 +14,7 @@ namespace AirLines
     
     public partial class Flight
     {
-        public String[] str = {"ID","DateTime", "Route", "Plane", "Canceled" };
+        public String[] str = {"ID","DateTime", "RouteDetail", "PlaneDetail", "Canceled" };
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Flight()
         {
@@ -24,7 +24,22 @@ namespace AirLines
         public int ID { get; set; }
         public System.DateTime DateTime { get; set; }
         public int Route { get; set; }
+        public string RouteDetail 
+        {
+            get
+            {
+                return $"{Route1.DepartureAirport}-{Route1.DestinationAirport}";
+            }
+        }
         public int Plane { get; set; }
+        public string PlaneDetail 
+        { 
+            get
+            {
+                return $"{Plane1.Model}-{Plane1.ID}";
+            }
+        }
+        
         public bool Canceled { get; set; }
     
         public virtual Plane Plane1 { get; set; }

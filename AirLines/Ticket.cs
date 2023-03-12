@@ -14,10 +14,24 @@ namespace AirLines
     
     public partial class Ticket
     {
-        public String[] str = { "ID", "PassengerID", "FlightID" };
+        public String[] str = { "ID", "PassengerDetail", "FlightDetail" };
         public int ID { get; set; }
         public int PassengerID { get; set; }
+        public string PassengerDetail 
+        {
+            get
+            {
+                return $"{Passenger.Surname} {Passenger.Name} {Passenger.Patronymic}";
+            }
+        }
         public int FlightID { get; set; }
+        public string FlightDetail 
+        {
+            get
+            {
+                return $"{Flight.RouteDetail}";
+            }
+        }
         public string PasName
         {
             get

@@ -40,27 +40,27 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panelAdmin = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonAdd = new System.Windows.Forms.Button();
+            this.comboBoxAdd = new System.Windows.Forms.ComboBox();
+            this.buttonArrivalTime = new System.Windows.Forms.Button();
+            this.buttonLifetime = new System.Windows.Forms.Button();
+            this.buttonIncome = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.buttonIncome = new System.Windows.Forms.Button();
-            this.buttonLifetime = new System.Windows.Forms.Button();
-            this.buttonArrivalTime = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxAdd = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panelAdmin = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panelAdmin.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelAdmin.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -170,6 +170,103 @@
             this.panel3.Size = new System.Drawing.Size(449, 492);
             this.panel3.TabIndex = 6;
             // 
+            // panelAdmin
+            // 
+            this.panelAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelAdmin.Controls.Add(this.label6);
+            this.panelAdmin.Controls.Add(this.label3);
+            this.panelAdmin.Controls.Add(this.buttonAdd);
+            this.panelAdmin.Controls.Add(this.comboBoxAdd);
+            this.panelAdmin.Location = new System.Drawing.Point(30, 63);
+            this.panelAdmin.Name = "panelAdmin";
+            this.panelAdmin.Size = new System.Drawing.Size(402, 209);
+            this.panelAdmin.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.label6.Location = new System.Drawing.Point(72, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(258, 25);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Панель администратора";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(33, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(321, 25);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Добавление записи в таблицу:";
+            // 
+            // buttonAdd
+            // 
+            this.buttonAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonAdd.Location = new System.Drawing.Point(228, 80);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(159, 29);
+            this.buttonAdd.TabIndex = 6;
+            this.buttonAdd.Text = "Добавить";
+            this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // comboBoxAdd
+            // 
+            this.comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBoxAdd.FormattingEnabled = true;
+            this.comboBoxAdd.Items.AddRange(new object[] {
+            "Commander",
+            "Flight",
+            "Passenger",
+            "Plane",
+            "Role",
+            "Route",
+            "Ticket",
+            "Users"});
+            this.comboBoxAdd.Location = new System.Drawing.Point(21, 80);
+            this.comboBoxAdd.Name = "comboBoxAdd";
+            this.comboBoxAdd.Size = new System.Drawing.Size(201, 28);
+            this.comboBoxAdd.TabIndex = 5;
+            // 
+            // buttonArrivalTime
+            // 
+            this.buttonArrivalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonArrivalTime.Location = new System.Drawing.Point(19, 314);
+            this.buttonArrivalTime.Name = "buttonArrivalTime";
+            this.buttonArrivalTime.Size = new System.Drawing.Size(413, 50);
+            this.buttonArrivalTime.TabIndex = 3;
+            this.buttonArrivalTime.Text = "Время прибытия рейсов";
+            this.buttonArrivalTime.UseVisualStyleBackColor = true;
+            this.buttonArrivalTime.Click += new System.EventHandler(this.buttonArrivalTime_Click);
+            // 
+            // buttonLifetime
+            // 
+            this.buttonLifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonLifetime.Location = new System.Drawing.Point(19, 370);
+            this.buttonLifetime.Name = "buttonLifetime";
+            this.buttonLifetime.Size = new System.Drawing.Size(413, 50);
+            this.buttonLifetime.TabIndex = 2;
+            this.buttonLifetime.Text = "Срок эксплуатации техники";
+            this.buttonLifetime.UseVisualStyleBackColor = true;
+            this.buttonLifetime.Click += new System.EventHandler(this.buttonLifetime_Click);
+            // 
+            // buttonIncome
+            // 
+            this.buttonIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonIncome.Location = new System.Drawing.Point(19, 426);
+            this.buttonIncome.Name = "buttonIncome";
+            this.buttonIncome.Size = new System.Drawing.Size(413, 50);
+            this.buttonIncome.TabIndex = 1;
+            this.buttonIncome.Text = "Доходы компании";
+            this.buttonIncome.UseVisualStyleBackColor = true;
+            this.buttonIncome.Click += new System.EventHandler(this.buttonIncome_Click);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -233,39 +330,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Таблица для просмотра:";
             // 
-            // buttonIncome
-            // 
-            this.buttonIncome.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonIncome.Location = new System.Drawing.Point(19, 426);
-            this.buttonIncome.Name = "buttonIncome";
-            this.buttonIncome.Size = new System.Drawing.Size(413, 50);
-            this.buttonIncome.TabIndex = 1;
-            this.buttonIncome.Text = "Доходы компании";
-            this.buttonIncome.UseVisualStyleBackColor = true;
-            this.buttonIncome.Click += new System.EventHandler(this.buttonIncome_Click);
-            // 
-            // buttonLifetime
-            // 
-            this.buttonLifetime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonLifetime.Location = new System.Drawing.Point(19, 370);
-            this.buttonLifetime.Name = "buttonLifetime";
-            this.buttonLifetime.Size = new System.Drawing.Size(413, 50);
-            this.buttonLifetime.TabIndex = 2;
-            this.buttonLifetime.Text = "Срок эксплуатации техники";
-            this.buttonLifetime.UseVisualStyleBackColor = true;
-            this.buttonLifetime.Click += new System.EventHandler(this.buttonLifetime_Click);
-            // 
-            // buttonArrivalTime
-            // 
-            this.buttonArrivalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonArrivalTime.Location = new System.Drawing.Point(19, 314);
-            this.buttonArrivalTime.Name = "buttonArrivalTime";
-            this.buttonArrivalTime.Size = new System.Drawing.Size(413, 50);
-            this.buttonArrivalTime.TabIndex = 3;
-            this.buttonArrivalTime.Text = "Время прибытия рейсов";
-            this.buttonArrivalTime.UseVisualStyleBackColor = true;
-            this.buttonArrivalTime.Click += new System.EventHandler(this.buttonArrivalTime_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AirLines.Properties.Resources.planeLogo;
@@ -275,70 +339,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(33, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(321, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Добавление записи в таблицу:";
-            // 
-            // comboBoxAdd
-            // 
-            this.comboBoxAdd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBoxAdd.FormattingEnabled = true;
-            this.comboBoxAdd.Items.AddRange(new object[] {
-            "Commander",
-            "Flight",
-            "Passenger",
-            "Plane",
-            "Role",
-            "Route",
-            "Ticket",
-            "Users"});
-            this.comboBoxAdd.Location = new System.Drawing.Point(21, 80);
-            this.comboBoxAdd.Name = "comboBoxAdd";
-            this.comboBoxAdd.Size = new System.Drawing.Size(201, 28);
-            this.comboBoxAdd.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(228, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(159, 29);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Добавить";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // panelAdmin
-            // 
-            this.panelAdmin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelAdmin.Controls.Add(this.label6);
-            this.panelAdmin.Controls.Add(this.label3);
-            this.panelAdmin.Controls.Add(this.button1);
-            this.panelAdmin.Controls.Add(this.comboBoxAdd);
-            this.panelAdmin.Location = new System.Drawing.Point(30, 63);
-            this.panelAdmin.Name = "panelAdmin";
-            this.panelAdmin.Size = new System.Drawing.Size(402, 209);
-            this.panelAdmin.TabIndex = 7;
-            this.panelAdmin.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(72, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(258, 25);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "Панель администратора";
             // 
             // MainWindow
             // 
@@ -364,11 +364,11 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panelAdmin.ResumeLayout(false);
+            this.panelAdmin.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelAdmin.ResumeLayout(false);
-            this.panelAdmin.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -397,7 +397,7 @@
         private System.Windows.Forms.Panel panelAdmin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.ComboBox comboBoxAdd;
     }
 }
